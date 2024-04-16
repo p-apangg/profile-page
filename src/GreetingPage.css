@@ -1,0 +1,60 @@
+.Greeting{
+  text-align: center;
+  background-color: #faf2f2;
+
+}
+
+.circle-photo {
+  flex-shrink: 0;
+  width: 40vh; /* Adjust the width and height as needed */
+  height: 40vh;
+  border-radius: 100%; /* This will make the element a circle */
+  overflow: hidden; /* This is to hide any content that might extend beyond the circle */
+  margin-right: 50px;
+  border: 10px solid white; 
+}
+
+.Greeting-header{
+  margin-left: 100px;
+  margin-right: 100px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+.Greeting-wording {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.Greeting-wording p {
+  font-size: 60px; /* Adjust the font size */
+  color: #654e3e;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Greeting-wording div {
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 0; /* Remove top margin */
+  font-size: 20px; /* Adjust the font size */
+  color: #8f6963;
+  text-align: left; /* Align text to the left */
+}
+
+.email-button {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e1b8bd;
+  color: #654e3e;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
