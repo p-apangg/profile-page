@@ -1,7 +1,8 @@
 .Greeting{
   text-align: center;
   background-color: #faf2f2;
-
+  position: relative;
+  z-index: 1;
 }
 
 .circle-photo {
@@ -17,7 +18,7 @@
 .Greeting-header{
   margin-left: 100px;
   margin-right: 100px;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
