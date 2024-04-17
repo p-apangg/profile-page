@@ -1,0 +1,110 @@
+.Aboutme{
+  justify-content: center;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Aboutme-image{
+  width: 20vh; /* Adjust the width and height as needed */
+  height: 20vh;
+}
+.Aboutme-title {
+  font-size: 50px; /* Adjust the font size */
+  color: #654e3e;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+.Aboutme-detail{
+  flex-direction:row;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+.Aboutme-content{
+  flex-direction:column;
+  margin-left: 60px;
+  margin-right: 60px;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  border-style: solid; /* Explicitly define the border style */
+  border-color: white;
+  background-color: white;
+  transition: transform 0.1s ease;
+}
+
+.Aboutme-content:hover .Aboutme-image{
+  animation: jiggle 0.3s ease;
+}
+
+.Aboutme-wording {
+  flex-direction:column;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.Aboutme-wording p {
+  font-size: 20px; /* Adjust the font size */
+  color: #654e3e;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center; 
+}
+
+.Aboutme-wording div {
+  margin-top: 0; /* Remove top margin */
+  margin-bottom: 0; /* Remove top margin */
+  font-size: 15px; /* Adjust the font size */
+  color: #8f6963;
+  text-align: center; 
+}
+
+.speech-bubble {
+  align-items: center;
+  margin-top: 3vh;
+  position: relative;
+  background: #F4E4AC;
+  border-radius: 5px;
+  padding: 10px;
+  height: 20vh;
+  width: 170vh; /* Adjust width as needed */
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Optional shadow for better visibility */
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  top: -30px; /* Adjust this value to change where the triangle appears */
+  left: 50%; /* Centers the triangle */
+  width: 0;
+  height: 0;
+  border: 30px solid transparent; /* Creates side borders of the triangle */
+  border-bottom-color: #F4E4AC; /* The color of the triangle */
+  border-top: 0; /* Removes the bottom border */
+  margin-left: -10px; /* Aligns the triangle perfectly under the bubble */
+}
+
+@keyframes jiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
