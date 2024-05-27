@@ -1,0 +1,139 @@
+/* Existing CSS for .Aboutme and related classes */
+
+.Aboutme {
+  justify-content: center;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Aboutme-title {
+  font-size: 40px; /* Adjust the font size */
+  color: #654e3e;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center; 
+}
+
+.Aboutme-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Individual button styling */
+.Aboutme-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 20px;
+  width: calc(25% - 20px); /* Ensure four buttons fit in one row */
+  min-width: 200px; /* Minimum width for each button */
+  box-sizing: border-box;
+  font-size: calc(10px + 2vmin);
+  border-style: solid;
+  border-color: white;
+  background-color: white;
+  transition: transform 0.1s ease;
+}
+
+.Aboutme-content:hover .Aboutme-image {
+  animation: jiggle 0.3s ease;
+}
+
+.Aboutme-image {
+  width: 20vh;
+  height: 20vh;
+  margin-bottom: 10px;
+}
+
+.Aboutme-wording {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Aboutme-wording p {
+  font-size: 20px;
+  color: #654e3e;
+  font-weight: bold;
+  margin: 0;
+}
+
+.Aboutme-wording div {
+  font-size: 15px;
+  color: #8f6963;
+  margin-top: 5px;
+}
+
+
+@media (max-width: 1200px) {
+  .Aboutme-title {
+    font-size: 30px; /* Adjust the font size */
+  } 
+  .Aboutme-content {
+    width: calc(25% - 20px); /* Four buttons per row */
+  }
+
+  .Aboutme-image {
+    width: 18vh;
+    height: 18vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .Aboutme-title {
+    font-size: calc(200%); /* Adjust the font size */
+  } 
+
+  .Aboutme-content {
+    width: calc(50% - 20px); /* Two buttons per row */
+  }
+
+  .Aboutme-image {
+    width: 16vh;
+    height: 16vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .Aboutme-content {
+    width: calc(50% - 20px); /* Two buttons per row */
+  }
+
+  .Aboutme-image {
+    width: 14vh;
+    height: 14vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .Aboutme-content {
+    width: calc(100% - 20px); /* One button per row */
+  }
+
+  .Aboutme-image {
+    width: 12vh;
+    height: 12vh;
+  }
+}
+
+@keyframes jiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}

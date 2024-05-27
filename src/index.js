@@ -4,12 +4,14 @@ import './index.css';
 import GreetingPage from './GreetingPage';
 import NavBar from './NavBar';
 import reportWebVitals from './reportWebVitals';
+import AboutMe from './AboutMe';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBar/>
     <GreetingPage/>
+    <AboutMe/>
   </React.StrictMode>
 );
 

@@ -1,8 +1,7 @@
-import logo from './Images/GreetingPage.jpg';
 import pan from './Images/Symbol-Pan.png';
 import './NavBar.css';
 
-function GreetingPage() {
+function NavBar() {
   return (
 <div class="navbar">
   <a href=""><img src={pan} className="App-logo" alt="logo" /></a>
@@ -32,4 +31,4 @@ function GreetingPage() {
   );
 }
 
-export default GreetingPage;
+export default NavBar;

@@ -12,8 +12,8 @@ function GreetingPage() {
         </p>
         <div>
         Hello, I am Papang! I'm a first-year master's student pursuing Computer Science at Osaka University in Japan. 
-        Originally from Thailand, I'm passionate about technology and eager to share my journey with you.
-On this platform, I'll be showcasing my projects, sharing insights from my studies, and exploring the fascinating world of computer science.
+        Originally from Thailand, I have a keen interest in machine learning and application development. 
+        I'm Passionate about developing innovative AI solutions and enhancing their usability through thoughtful design.
         </div>
         <a href="mailto:thanpimon.bua@gmail.com" class="email-button">Contact Me!</a>
         </div>
