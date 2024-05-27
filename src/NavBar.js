@@ -5,7 +5,7 @@ import './NavBar.css';
 function GreetingPage() {
   return (
 <div class="navbar">
-  <a href=""><img src={pan} className="App-logo" alt="logo" /></a>
+  <img src={pan} className="App-logo" alt="logo" />
   <a href="#about-me">About me</a>
   <div class="dropdown">
     <button class="dropbtn">Academic Profile
