@@ -26,12 +26,19 @@ body {
 }
 
 /* Links inside the navbar */
+.navbar img.App-logo {
+  max-width: 50px; /* Adjust this value as needed */
+  max-height: 50px; /* Adjust this value as needed */
+  margin-left: 10px;
+  margin-right: 10px; /* Space between the image and the next element */
+}
+
 .navbar a {
   display: flex;
   align-items: center;
   text-align: center;
   font-size: 16px;
-  height: 5vmin;
+  height: 100%;
   color: white;
   padding: 10px 20px;
   margin: 0;
