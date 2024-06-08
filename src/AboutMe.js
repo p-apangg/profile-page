@@ -8,11 +8,12 @@ import icon_gmail from './Images/Symbol/gmail.png';
 import icon_fb from './Images/Symbol/facebook.png';
 import icon_ig from './Images/Symbol/instagram.png';
 import './AboutMe.css';
+import './Overall.css';
 
 function AboutMe() {
   return (
-    <div className="Aboutme">
-      <div className="Aboutme-title">
+    <div className="Overall">
+      <div className="Overall-title">
         About me!!
       </div>
 
@@ -54,7 +55,7 @@ function AboutMe() {
             </div>
             <div className="info-row">
               <span className="info-label">Sport:</span>
-              <span>Table Tennis, Running, Tennis</span>
+              <span>Table Tennis, Tennis</span>
             </div>
             <div className="info-row">
               <span className="info-label">Music:</span>
