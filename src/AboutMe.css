@@ -10,12 +10,21 @@
 }
 
 .Aboutme-title {
-  font-size: 40px; /* Adjust the font size */
+  font-size: xx-large; /* Adjust the font size */
   color: #654e3e;
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center; 
+}
+
+.link-as-text {
+  color: inherit; /* Maintain the same color as the surrounding text */
+  text-decoration: none; /* Remove underline */
+}
+
+.link-as-text:hover {
+  text-decoration: underline; /* Optionally, add underline on hover to indicate it is a link */
 }
 
 .Aboutme-detail {
@@ -32,12 +41,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  margin: 5px;
   padding: 20px;
-  width: calc(25% - 20px); /* Ensure four buttons fit in one row */
+  width: calc(50% - 20px); /* Ensure four buttons fit in one row */
   min-width: 200px; /* Minimum width for each button */
   box-sizing: border-box;
-  font-size: calc(10px + 2vmin);
   border-style: solid;
   border-color: white;
   background-color: white;
@@ -49,8 +57,8 @@
 }
 
 .Aboutme-image {
-  width: 20vh;
-  height: 20vh;
+  width: 15vh;
+  height: 15vh;
   margin-bottom: 10px;
 }
 
@@ -74,55 +82,36 @@
   margin-top: 5px;
 }
 
-
-@media (max-width: 1200px) {
-  .Aboutme-title {
-    font-size: 30px; /* Adjust the font size */
-  } 
-  .Aboutme-content {
-    width: calc(25% - 20px); /* Four buttons per row */
-  }
-
-  .Aboutme-image {
-    width: 18vh;
-    height: 18vh;
-  }
+.info-container {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width: 992px) {
-  .Aboutme-title {
-    font-size: calc(200%); /* Adjust the font size */
-  } 
+.info-row {
+  display: flex;
+  margin-bottom: 5px;
+  text-align: left;
+}
 
-  .Aboutme-content {
-    width: calc(50% - 20px); /* Two buttons per row */
-  }
+.info-label {
+  width: 120px; /* Adjust this value as needed */
+  font-weight: bold;
+  flex-shrink: 0;
+  text-align: left;
+}
 
-  .Aboutme-image {
-    width: 16vh;
-    height: 16vh;
-  }
+.info-row span:last-child {
+  flex-grow: 1;
 }
 
 @media (max-width: 768px) {
   .Aboutme-content {
-    width: calc(50% - 20px); /* Two buttons per row */
+    width: calc(100% - 10px); /* Two buttons per row */
   }
 
   .Aboutme-image {
     width: 14vh;
     height: 14vh;
-  }
-}
-
-@media (max-width: 576px) {
-  .Aboutme-content {
-    width: calc(100% - 20px); /* One button per row */
-  }
-
-  .Aboutme-image {
-    width: 12vh;
-    height: 12vh;
   }
 }
 
