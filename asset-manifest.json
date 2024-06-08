@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/profile-page/static/css/main.ee99a210.css",
-    "main.js": "/profile-page/static/js/main.685e9038.js",
+    "main.css": "/profile-page/static/css/main.1dca3b68.css",
+    "main.js": "/profile-page/static/js/main.155cd685.js",
     "static/js/453.6c8e95b9.chunk.js": "/profile-page/static/js/453.6c8e95b9.chunk.js",
     "static/media/GreetingPage.jpg": "/profile-page/static/media/GreetingPage.7297ae442450d2c5a7e3.jpg",
     "static/media/Symbol-Pan.png": "/profile-page/static/media/Symbol-Pan.4ad34182df199292538d.png",
@@ -13,12 +13,16 @@
     "static/media/thailand.png": "/profile-page/static/media/thailand.177d2739a3ac1f9def08.png",
     "static/media/linkedin.png": "/profile-page/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/profile-page/index.html",
-    "main.ee99a210.css.map": "/profile-page/static/css/main.ee99a210.css.map",
-    "main.685e9038.js.map": "/profile-page/static/js/main.685e9038.js.map",
+    "static/media/workbrown.svg": "/profile-page/static/media/workbrown.cbf260ab3e7ee197665bd06304d97eec.svg",
+    "static/media/workwhite.svg": "/profile-page/static/media/workwhite.9d5e1c9732f12346983a75daff3d7f52.svg",
+    "static/media/gradbrown.svg": "/profile-page/static/media/gradbrown.7be13f0df1f5a1672504b69db65434f4.svg",
+    "static/media/gradwhite.svg": "/profile-page/static/media/gradwhite.a92525c2f6ba79c56be15e11b8ea7eb0.svg",
+    "main.1dca3b68.css.map": "/profile-page/static/css/main.1dca3b68.css.map",
+    "main.155cd685.js.map": "/profile-page/static/js/main.155cd685.js.map",
     "453.6c8e95b9.chunk.js.map": "/profile-page/static/js/453.6c8e95b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee99a210.css",
-    "static/js/main.685e9038.js"
+    "static/css/main.1dca3b68.css",
+    "static/js/main.155cd685.js"
   ]
 }
