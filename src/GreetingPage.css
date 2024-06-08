@@ -7,24 +7,25 @@
 
 .circle-photo {
   flex-shrink: 0;
-  width: 40vh; /* Adjust the width and height as needed */
-  height: 40vh;
+  width: calc(25vw); /* Adjust the width and height as needed */
+  height: calc(25vw);
   border-radius: 100%; /* This will make the element a circle */
   overflow: hidden; /* This is to hide any content that might extend beyond the circle */
-  margin-right: 50px;
-  margin-top:  20px;
-  margin-bottom: 10px;
-  border: 10px solid white; 
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top:  5vw;
+  margin-bottom: 5vw;
+  border: 10px solid rgb(255, 255, 255); 
 }
 
 .Greeting-header{
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 2vh;
+  margin-right: 1vh;
   min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: left;
 }
 .Greeting-wording {
   display: flex;
@@ -33,7 +34,7 @@
   justify-content: flex-start;
 }
 .Greeting-wording p {
-  font-size: 60px; /* Adjust the font size */
+  font-size: xx-large; /* Adjust the font size */
   color: #654e3e;
   font-weight: bold;
   margin-top: 20px;
@@ -43,9 +44,8 @@
 .Greeting-wording div {
   margin-top: 0; /* Remove top margin */
   margin-bottom: 0; /* Remove top margin */
-  font-size: 20px; /* Adjust the font size */
+  font-size: medium; /* Adjust the font size */
   color: #8f6963;
-  text-align: left; /* Align text to the left */
 }
 
 .email-button {
@@ -58,41 +58,12 @@
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: medium;
   cursor: pointer;
   font-weight: bold;
 }
 
-/* Add this at the end of your GreetingPage.css file */
-
-@media (max-width: 1200px) {
-  .Greeting-wording p {
-    font-size: 50px;
-  }
-  
-  .Greeting-wording div {
-    font-size: 18px;
-  }
-  
-  .email-button {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 992px) {
-  .Greeting-wording p {
-    font-size: 40px;
-  }
-  
-  .Greeting-wording div {
-    font-size: 16px;
-  }
-  
-  .email-button {
-    font-size: 12px;
-  }
-}
-
+/* half my computer */
 @media (max-width: 768px) {
   .Greeting-header {
     flex-direction: column;
@@ -104,7 +75,8 @@
     width: 30vh;
     height: 30vh;
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 0px;
   }
 
   .Greeting-wording {
@@ -123,19 +95,5 @@
   
   .email-button {
     font-size: 12px;
-  }
-}
-
-@media (max-width: 576px) {
-  .Greeting-wording p {
-    font-size: 20px;
-  }
-  
-  .Greeting-wording div {
-    font-size: 12px;
-  }
-  
-  .email-button {
-    font-size: 10px;
   }
 }
