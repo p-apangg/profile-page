@@ -12,7 +12,7 @@ function WorkExperience() {
       </div>
       <VerticalTimeline>
   <VerticalTimelineElement
-    className="vertical-timeline-element--work"
+    className="vertical-timeline-element--work custom-date-color"
     contentStyle={{ background: '#aa8b83', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  #aa8b83' }}
     date="April 2024 - present"
@@ -20,7 +20,7 @@ function WorkExperience() {
     icon = {<WorkWicon />}
   >
     <h3 className="vertical-timeline-element-title">Teaching Assistant</h3>
-    <h4 className="vertical-timeline-element-subtitle">Osaka University, Japan.</h4>
+    <h4 className="vertical-timeline-element-subtitle">Osaka University. Osaka, Japan.</h4>
     <p>
       - Assisted professor in teaching "Practical Introduction to Intelligent Robot Systems" course to first-year students
       <br/>- Prepared practical session robots by disassembling cleaning robots and
@@ -29,7 +29,7 @@ function WorkExperience() {
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
-    className="vertical-timeline-element--work"
+    className="vertical-timeline-element--work custom-date-color"
     contentStyle={{ background: '#aa8b83', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  #aa8b83' }}
     date="February 2023 - present"
@@ -52,7 +52,7 @@ function WorkExperience() {
     icon = {<WorkBicon />}
   >
     <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-    <h4 className="vertical-timeline-element-subtitle">Siam Commercial Bank. Bangkok ,Thailand.</h4>
+    <h4 className="vertical-timeline-element-subtitle">Siam Commercial Bank. Bangkok, Thailand.</h4>
     <p>
     - Developed document retrieval and Answer extraction model for mutual
  funds QA system

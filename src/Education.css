@@ -9,3 +9,13 @@
     max-width: 50px; /* Adjust size as needed */
     height: auto;
   }
+
+.custom-date-color .vertical-timeline-element-date {
+  color: #eae2e0; 
+}
+
+@media (min-width: 1190px) {
+  .custom-date-color .vertical-timeline-element-date {
+    color: #aa8b83; 
+  }
+}
