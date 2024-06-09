@@ -38,6 +38,30 @@
   margin-right: 10px;
   margin-bottom: 0px;
 }
+.Research-abstract p{
+  margin-top: -10px;
+  font-size: small;
+}
+/* Container styling */
+.Research-proceedings {
+  max-width: 600px;
+  text-align: left;
+  font-size: medium;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+/* Paragraph styling */
+.Research-proceedings p {
+  font-size: small;
+}
+
+/* Highlight styling */
+.highlight {
+  font-weight: bold;
+  color: #654e3e; /* Optional: Change color to highlight further */
+}
 
 .research-button {
   display: inline-block;
@@ -50,14 +74,14 @@
   font-size: medium;
   cursor: pointer;
   font-weight: bold;
+  margin-left: 10px;
 }
 /* Container for the buttons */
 .button-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 100%;
-  max-width: 400px; /* Adjust as needed */
-  margin: 0 auto; /* Center the container */
+  max-width: 600px; /* Adjust as needed */
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
