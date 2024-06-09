@@ -76,6 +76,10 @@
   font-weight: bold;
   margin-left: 10px;
 }
+.research-button:hover {
+  background-color: #d98e97;
+}
+
 /* Container for the buttons */
 .button-container {
   display: flex;

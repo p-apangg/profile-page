@@ -8,6 +8,7 @@ import AboutMe from './AboutMe';
 import Education from './Education';
 import WorkExperience from './WorkExperience';
 import Research from './Research';
+import ProjectPortfolio from './ProjectPortfolio';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ root.render(
     <Education/>
     <WorkExperience/>
     <Research/>
+    <ProjectPortfolio/>
   </React.StrictMode>
 );
 
