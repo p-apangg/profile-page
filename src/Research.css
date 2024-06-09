@@ -1,0 +1,63 @@
+.Research-title {
+  font-size: x-large; /* Adjust the font size */
+  color: #654e3e;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center; 
+  max-width: 600px;
+}
+
+.Research-content {
+  color: #654e3e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Research-video {
+  position: relative;
+  width: min(560px,100%);
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.Research-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Research-abstract {
+  max-width: 600px;
+  text-align: left;
+  font-size: medium;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.research-button {
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: #e1b8bd;
+  color: #654e3e;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: medium;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* Container for the buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px; /* Adjust as needed */
+  margin: 0 auto; /* Center the container */
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
