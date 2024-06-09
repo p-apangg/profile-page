@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import AboutMe from './AboutMe';
 import Education from './Education';
 import WorkExperience from './WorkExperience';
+import Research from './Research';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ root.render(
     <AboutMe/>
     <Education/>
     <WorkExperience/>
+    <Research/>
   </React.StrictMode>
 );
 
