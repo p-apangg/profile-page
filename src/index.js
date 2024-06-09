@@ -9,6 +9,7 @@ import Education from './Education';
 import WorkExperience from './WorkExperience';
 import Research from './Research';
 import ProjectPortfolio from './ProjectPortfolio';
+import ScrollToTop from "react-scroll-to-top";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -19,6 +20,7 @@ root.render(
     <WorkExperience/>
     <Research/>
     <ProjectPortfolio/>
+    <ScrollToTop smooth/>
   </React.StrictMode>
 );
 

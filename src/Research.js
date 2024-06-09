@@ -1,8 +1,6 @@
 import './Research.css';
 import './Overall.css';
 import 'react-vertical-timeline-component/style.min.css';
-import {ReactComponent as WorkBicon} from './Images/svg/workbrown.svg';
-import {ReactComponent as WorkWicon} from './Images/svg/workwhite.svg';
 function Research() {
   return (
     <div className='Overall'>
@@ -29,7 +27,7 @@ function Research() {
         </div>
         <div className="button-container">
         <a href="/Files/ResearchPaper_Bi-ACT.pdf" download className="research-button">Download Paper</a>
-          <a href="https://mertcookimg.github.io/bi-act/" className="research-button">Read More</a>
+          <a href="https://mertcookimg.github.io/bi-act/" className="research-button">Read More &#10095;</a>
         </div>
         <div className="Research-proceedings">
             <h3>Conference Proceedings</h3>
