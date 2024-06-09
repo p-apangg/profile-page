@@ -1,15 +1,25 @@
 {
   "files": {
-    "main.css": "/profile-page/static/css/main.f8f892fd.css",
-    "main.js": "/profile-page/static/js/main.bd3a6be6.js",
-    "static/js/453.6c8e95b9.chunk.js": "/profile-page/static/js/453.6c8e95b9.chunk.js",
+    "main.css": "/profile-page/static/css/main.bf3648d1.css",
+    "main.js": "/profile-page/static/js/main.02fcdaee.js",
+    "static/js/453.1aae3151.chunk.js": "/profile-page/static/js/453.1aae3151.chunk.js",
+    "static/media/WhiteboardScanner1.png": "/profile-page/static/media/WhiteboardScanner1.79a83ada3b107523fd01.png",
+    "static/media/WhiteboardScanner3.png": "/profile-page/static/media/WhiteboardScanner3.461831cf49ae0197fde0.png",
+    "static/media/WhiteboardScanner2.png": "/profile-page/static/media/WhiteboardScanner2.b0a5640886cc918fa646.png",
     "static/media/GreetingPage.jpg": "/profile-page/static/media/GreetingPage.7297ae442450d2c5a7e3.jpg",
+    "static/media/WhiteboardScanner4.png": "/profile-page/static/media/WhiteboardScanner4.f6946bcba2049e4aae07.png",
+    "static/media/MyHomepage.png": "/profile-page/static/media/MyHomepage.199242904b0aeaa95ee5.png",
+    "static/media/hackathon.png": "/profile-page/static/media/hackathon.8957cd3323f9939aea05.png",
+    "static/media/elementz.jpg": "/profile-page/static/media/elementz.11a29caf3a38ae3aaa71.jpg",
     "static/media/Symbol-Pan.png": "/profile-page/static/media/Symbol-Pan.4ad34182df199292538d.png",
+    "static/media/toeic.webp": "/profile-page/static/media/toeic.a29e0b613196491ec848.webp",
     "static/media/instagram.png": "/profile-page/static/media/instagram.e719d8b29f452a16302d.png",
     "static/media/contact.png": "/profile-page/static/media/contact.3aa7723f8cf322d566cf.png",
+    "static/media/mext.png": "/profile-page/static/media/mext.d8dbe7c878ae90a82c50.png",
     "static/media/background.png": "/profile-page/static/media/background.5faf2adff98f4dbafb57.png",
     "static/media/interest.png": "/profile-page/static/media/interest.b8c87f0fed34a049d632.png",
     "static/media/skill.png": "/profile-page/static/media/skill.a5e539f36cb315dc0a10.png",
+    "static/media/jlpt.jpg": "/profile-page/static/media/jlpt.951a8f39cf95e85cdb4c.jpg",
     "static/media/thailand.png": "/profile-page/static/media/thailand.177d2739a3ac1f9def08.png",
     "static/media/linkedin.png": "/profile-page/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/profile-page/index.html",
@@ -17,12 +27,12 @@
     "static/media/workwhite.svg": "/profile-page/static/media/workwhite.9d5e1c9732f12346983a75daff3d7f52.svg",
     "static/media/gradbrown.svg": "/profile-page/static/media/gradbrown.7be13f0df1f5a1672504b69db65434f4.svg",
     "static/media/gradwhite.svg": "/profile-page/static/media/gradwhite.a92525c2f6ba79c56be15e11b8ea7eb0.svg",
-    "main.f8f892fd.css.map": "/profile-page/static/css/main.f8f892fd.css.map",
-    "main.bd3a6be6.js.map": "/profile-page/static/js/main.bd3a6be6.js.map",
-    "453.6c8e95b9.chunk.js.map": "/profile-page/static/js/453.6c8e95b9.chunk.js.map"
+    "main.bf3648d1.css.map": "/profile-page/static/css/main.bf3648d1.css.map",
+    "main.02fcdaee.js.map": "/profile-page/static/js/main.02fcdaee.js.map",
+    "453.1aae3151.chunk.js.map": "/profile-page/static/js/453.1aae3151.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8f892fd.css",
-    "static/js/main.bd3a6be6.js"
+    "static/css/main.bf3648d1.css",
+    "static/js/main.02fcdaee.js"
   ]
 }
