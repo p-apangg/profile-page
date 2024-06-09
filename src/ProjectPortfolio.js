@@ -147,6 +147,10 @@ const ProjectPortfolio = () => {
               <span className="info-labelp">Primary Duties:</span>
               <span>Designing the application UI and integrating the application with the database</span>
             </div>
+            <div className="info-rowp">
+              <span className="info-labelp">Sourcecode:</span>
+              <span><a href="https://github.com/hiiragi589/hackathon2024April" className="link-as-text">Smart Splitter</a></span>
+            </div>
           </div>
           <iframe
             src="https://www.youtube.com/embed/KRgqbgKeehI"
