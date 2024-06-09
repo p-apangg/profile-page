@@ -96,4 +96,7 @@
   .email-button {
     font-size: 12px;
   }
+  .email-button:hover {
+    background-color: #d98e97;
+  }
 }

@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  vertical-align: middle;
+  display: inline-block;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 90%;
+}
+
+.image {
+  height: 30px;
+  width: 165px;
+  background-color: #e1b8bd;
+  color: white;
+  margin: 5px;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  text-align: center;
+  justify-content: center; 
+  align-items: center; 
+  font-weight: bold;
+  border: none;
+}
+
+.prev, .next {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: 100%;
+  cursor: pointer;
+  color: black;
+  transition: 0.6s ease;
+}
+
+.next {
+  margin-left: 10px;
+}
+
+.prev {
+  margin-right: 10px;
+}
+
+.prev:hover, .next:hover {
+  color: white;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
