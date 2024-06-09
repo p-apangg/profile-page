@@ -72,7 +72,9 @@ function AboutMe() {
         <div className="info-container" style={{ height: '100px'}}>
             <div className="info-row">
               <span className="info-label">Language: </span>
-              <span>Thai, English, Japanese</span>
+              <span>Thai (Native)
+              <br/>English (Fluent)
+              <br/>Japanese (Business)</span>
             </div>
             <div className="info-row">
               <span className="info-label">Programming: </span>

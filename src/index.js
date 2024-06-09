@@ -10,21 +10,20 @@ import WorkExperience from './WorkExperience';
 import Research from './Research';
 import ProjectPortfolio from './ProjectPortfolio';
 import ScrollToTop from "react-scroll-to-top";
+import Achievement from './Achievement';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBar/>
     <GreetingPage/>
-    <AboutMe/>
-    <Education/>
-    <WorkExperience/>
-    <Research/>
-    <ProjectPortfolio/>
+    <div id="about-me"><AboutMe/></div>
+    <div id="education"><Education/></div>
+    <div id="work-experience"><WorkExperience/></div>
+    <div id="research"><Research/></div>
+    <div id="project"><ProjectPortfolio/></div>
+    <div id="achievement"><Achievement/></div>
     <ScrollToTop smooth/>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
