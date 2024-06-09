@@ -5,13 +5,16 @@ import GreetingPage from './GreetingPage';
 import NavBar from './NavBar';
 import reportWebVitals from './reportWebVitals';
 import AboutMe from './AboutMe';
-
+import Education from './Education';
+import WorkExperience from './WorkExperience';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBar/>
     <GreetingPage/>
     <AboutMe/>
+    <Education/>
+    <WorkExperience/>
   </React.StrictMode>
 );
 

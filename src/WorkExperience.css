@@ -1,0 +1,11 @@
+.timeline-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.icon-right {
+    margin-left: 20px; /* Adjust as needed */
+    max-width: 50px; /* Adjust size as needed */
+    height: auto;
+  }

@@ -1,6 +1,6 @@
 import logo from './Images/GreetingPage.jpg';
 import './GreetingPage.css';
-
+import './Overall.css';
 function GreetingPage() {
   return (
     <div className="Greeting">
