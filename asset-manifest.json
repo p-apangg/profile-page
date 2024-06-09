@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/profile-page/static/css/main.1dca3b68.css",
-    "main.js": "/profile-page/static/js/main.155cd685.js",
+    "main.css": "/profile-page/static/css/main.f8f892fd.css",
+    "main.js": "/profile-page/static/js/main.bd3a6be6.js",
     "static/js/453.6c8e95b9.chunk.js": "/profile-page/static/js/453.6c8e95b9.chunk.js",
     "static/media/GreetingPage.jpg": "/profile-page/static/media/GreetingPage.7297ae442450d2c5a7e3.jpg",
     "static/media/Symbol-Pan.png": "/profile-page/static/media/Symbol-Pan.4ad34182df199292538d.png",
@@ -17,12 +17,12 @@
     "static/media/workwhite.svg": "/profile-page/static/media/workwhite.9d5e1c9732f12346983a75daff3d7f52.svg",
     "static/media/gradbrown.svg": "/profile-page/static/media/gradbrown.7be13f0df1f5a1672504b69db65434f4.svg",
     "static/media/gradwhite.svg": "/profile-page/static/media/gradwhite.a92525c2f6ba79c56be15e11b8ea7eb0.svg",
-    "main.1dca3b68.css.map": "/profile-page/static/css/main.1dca3b68.css.map",
-    "main.155cd685.js.map": "/profile-page/static/js/main.155cd685.js.map",
+    "main.f8f892fd.css.map": "/profile-page/static/css/main.f8f892fd.css.map",
+    "main.bd3a6be6.js.map": "/profile-page/static/js/main.bd3a6be6.js.map",
     "453.6c8e95b9.chunk.js.map": "/profile-page/static/js/453.6c8e95b9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1dca3b68.css",
-    "static/js/main.155cd685.js"
+    "static/css/main.f8f892fd.css",
+    "static/js/main.bd3a6be6.js"
   ]
 }
