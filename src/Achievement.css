@@ -1,0 +1,94 @@
+.link-as-text {
+  color: inherit; /* Maintain the same color as the surrounding text */
+  text-decoration: none; /* Remove underline */
+}
+
+.link-as-text:hover {
+  text-decoration: underline; /* Optionally, add underline on hover to indicate it is a link */
+}
+
+.Achievement-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Individual button styling */
+.Achievement-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 20px;
+  width: calc(25% - 20px); /* Ensure four buttons fit in one row */
+  min-width: 250px; /* Minimum width for each button */
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: white;
+  background-color: white;
+  transition: transform 0.1s ease;
+}
+.Achievement-image-wrapper {
+  width: 20vmin;
+  height: 20vmin;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.Achievement-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.Achievement-wording {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Achievement-wording p {
+  font-size: medium;
+  color: #654e3e;
+  font-weight: bold;
+  margin: 0;
+}
+
+.Achievement-wording div {
+  font-size: small;
+  color: #8f6963;
+  margin-top: 5px;
+}
+
+.info-container-achievement {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}
+
+.info-row-achievement {
+  display: flex;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.info-label-achievement {
+  width: 60px; /* Adjust this value as needed */
+  font-weight: bold;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.info-row-achievement span:last-child {
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .Achievement-content {
+    width: calc(50% - 10px); /* Two buttons per row */
+  }
+}
