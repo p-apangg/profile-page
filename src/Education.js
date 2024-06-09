@@ -12,7 +12,7 @@ function Education() {
       </div>
       <VerticalTimeline>
   <VerticalTimelineElement
-    className="vertical-timeline-element--work"
+    className="vertical-timeline-element--work custom-date-color"
     contentStyle={{ background: '#aa8b83', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  #aa8b83' }}
     date="April 2024 - present"
@@ -46,8 +46,7 @@ function Education() {
     icon = {<GradBicon />}
   > 
     <h3 className="vertical-timeline-element-title">College Preparatory Student</h3>
-    <h4 className="vertical-timeline-element-subtitle"> Center for Japanese Language and Culture (Osaka
- University), Japan.</h4>
+    <h4 className="vertical-timeline-element-subtitle"> Center for Japanese Language and Culture, Japan.</h4>
     <p>
     Completed one year of intensive Japanese language and academic preparatory courses
  designed for foreign undergraduate students in Japan
