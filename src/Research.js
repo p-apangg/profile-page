@@ -31,6 +31,14 @@ function Research() {
         <a href="/Files/ResearchPaper_Bi-ACT.pdf" download className="research-button">Download Paper</a>
           <a href="https://mertcookimg.github.io/bi-act/" className="research-button">Read More</a>
         </div>
+        <div className="Research-proceedings">
+            <h3>Conference Proceedings</h3>
+            <p>
+              (1.) <span class="highlight">T. Buamanee</span>, M. Kobayashi, Y. Uranishi, and H. Takemura, in 2024 IEEE ICRA Workshop, A Future Roadmap for Sensorimotor Skill Learning for Robot Manipulation <a href="https://icra-manipulation-skill.github.io/" target="_blank" rel="noopener noreferrer">https://icra-manipulation-skill.github.io/</a>.
+              <br/>(2.) <span class="highlight">T. Buamanee</span>, M. Kobayashi, Y. Uranishi, and H. Takemura, “Bi-ACT: Bilateral Control-Based Imitation Learning via Action Chunking with Transformer,” in IEEE/ASME International Conference on Advanced Intelligent Mechatronics, (Jul. 15–19, 2024), Boston, USA.
+              <br/>(3.) M. Kobayashi, <span class="highlight">T. Buamanee</span>, Y. Uranishi, and H. Takemura, “Research on Method for Generating Robot Arm Movements in Imitation Learning Based on Bilateral Control,” in the Papers of Technical Meeting on Industrial Instrumentation and Control, IEE Japan, vol. IIC-23033, pp. 35–38, (In Japanese)
+            </p>
+        </div>
       </div>
     </div>
   );
