@@ -35,6 +35,7 @@ function Achievement() {
           </div>
         </div>
         </button>
+        
       <button className="Achievement-content">
       <div class="Achievement-image-wrapper">
         <img src={mext} className="Achievement-image" alt="logo" />
@@ -47,7 +48,7 @@ function Achievement() {
             </div>
           <div className="info-row-achievement">
               <span className="info-label-achievement">Year:</span>
-              <span>2024</span>
+              <span>2024-2026</span>
             </div>
             <div className="info-row-achievement">
               <span className="info-label-achievement">Details:</span>
@@ -118,6 +119,29 @@ function Achievement() {
             <div className="info-row-achievement">
               <span className="info-label-achievement">Details:</span>
               <span>Passed the Japanese Language Proficiency Test (JLPT) N2, which is the second highest level of Japanese language proficiency certification, with a score of 161/180.</span>
+            </div>
+          </div>
+        </div>
+        </button>
+        <button className="Achievement-content">
+      <div class="Achievement-image-wrapper">
+        <img src={mext} className="Achievement-image" alt="logo" />
+        </div>
+        <div className="Achievement-wording">
+          <div className="info-container-achievement">
+          <div className="info-row-achievement">
+              <span className="info-label-achievement">Name:</span>
+              <span>MEXT Scholarship (Bachelor's Degree)</span>
+            </div>
+          <div className="info-row-achievement">
+              <span className="info-label-achievement">Year:</span>
+              <span>2020-2024</span>
+            </div>
+            <div className="info-row-achievement">
+              <span className="info-label-achievement">Details:</span>
+              <span> Japanese Government (MEXT) Scholarship granted annually to top foreign
+ students worldwide, selected based on the recommendation of each country’s
+ Japanese Embassy. Full-tuition scholarship with a stipend for bachelor studies.</span>
             </div>
           </div>
         </div>
