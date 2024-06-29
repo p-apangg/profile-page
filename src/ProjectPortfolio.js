@@ -33,13 +33,27 @@ const ProjectPortfolio = () => {
     }
   };
 
-  // const scroll = (direction) => {
-  //   if (imageContainerRef.current) {
-  //     const far = imageContainerRef.current.offsetWidth / 2 * direction;
-  //     const pos = imageContainerRef.current.scrollLeft + far;
-  //     imageContainerRef.current.scrollTo({ left: pos, behavior: 'smooth' });
-  //   }
-  // };
+  const ImageCarousel = () => {
+    const images = [wb1, wb2, wb3, wb4];
+    const [currentIndex, setCurrentIndex] = useState(0);
+  
+    const handleNext = () => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+  
+    const handlePrev = () => {
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    };
+  
+    return (
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <button onClick={handlePrev} className="imageButton left"><strong>&lt;</strong></button>
+        <img src={images[currentIndex]} alt={`WhiteboardScanner Result ${currentIndex + 1}`} />
+        <button onClick={handleNext} className="imageButton right"><strong>&gt;</strong></button>
+      </div>
+    );
+  };
+
   const projectpersonal = [
     { name: 'My Profile', id: 0 },
     { name: 'Robot: Scanbot Explorer', id: 2 },
@@ -181,13 +195,7 @@ const ProjectPortfolio = () => {
               <span>松岡大聖, 中塚陽也, 中野秀紀, Buamanee Thanpimon</span>
             </div>
           </div>
-          <img src={wb2} alt="WhiteboardScanner Result 2" />
-          {/* <div className="image-grid">
-            <img src={wb1} alt="WhiteboardScanner Result 1" />
-            <img src={wb2} alt="WhiteboardScanner Result 2" />
-            <img src={wb3} alt="WhiteboardScanner Result 3" />
-            <img src={wb4} alt="WhiteboardScanner Result 4" />
-          </div> */}
+          <ImageCarousel />
         </div>
       )}
       {currentProjectIndex ===  projectpersonal.find(project => project.name === 'Arduino game: RunRun').id && (
