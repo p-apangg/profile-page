@@ -3,6 +3,7 @@ import elementz from './Achievements/elementz.jpg';
 import toeic from './Achievements/toeic.webp';
 import mext from './Achievements/mext.png';
 import hackathon from './Achievements/hackathon.png';
+import ivrc from './Achievements/IVRC2024.png';
 import './Achievement.css';
 import './Overall.css';
 
@@ -14,6 +15,29 @@ function Achievement() {
       </div>
 
       <div className="Achievement-detail">
+
+      <button className="Achievement-content">
+      <div class="Achievement-image-wrapper">
+        <img src={ivrc} className="Achievement-image" alt="logo" />
+        </div>
+        <div className="Achievement-wording">
+          <div className="info-container-achievement">
+          <div className="info-row-achievement">
+              <span className="info-label-achievement">Name:</span>
+              <span>IVRC Seed Stage</span>
+            </div>
+          <div className="info-row-achievement">
+              <span className="info-label-achievement">Year:</span>
+              <span>2024</span>
+            </div>
+            <div className="info-row-achievement">
+              <span className="info-label-achievement">Details:</span>
+              <span>Passed to the IVRC2024 seed stage as one of the 21 remaining teams to showcase their project in the Interverse Virtual Reality Challenge (IVRC), held from September 11-13, 2024, in Nagoya.</span>
+            </div>
+          </div>
+        </div>
+        </button>
+        
       <button className="Achievement-content">
       <div class="Achievement-image-wrapper">
         <img src={hackathon} className="Achievement-image" alt="logo" />
