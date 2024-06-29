@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/profile-page/static/css/main.23b720d8.css",
-    "main.js": "/profile-page/static/js/main.f28be77e.js",
+    "main.js": "/profile-page/static/js/main.246819f2.js",
     "static/js/453.1aae3151.chunk.js": "/profile-page/static/js/453.1aae3151.chunk.js",
     "static/media/WhiteboardScanner1.png": "/profile-page/static/media/WhiteboardScanner1.79a83ada3b107523fd01.png",
     "static/media/WhiteboardScanner3.png": "/profile-page/static/media/WhiteboardScanner3.461831cf49ae0197fde0.png",
@@ -19,6 +19,7 @@
     "static/media/background.png": "/profile-page/static/media/background.5faf2adff98f4dbafb57.png",
     "static/media/interest.png": "/profile-page/static/media/interest.b8c87f0fed34a049d632.png",
     "static/media/skill.png": "/profile-page/static/media/skill.a5e539f36cb315dc0a10.png",
+    "static/media/IVRC2024.png": "/profile-page/static/media/IVRC2024.635adfbe5091e4cb4b35.png",
     "static/media/jlpt.jpg": "/profile-page/static/media/jlpt.951a8f39cf95e85cdb4c.jpg",
     "static/media/thailand.png": "/profile-page/static/media/thailand.177d2739a3ac1f9def08.png",
     "static/media/linkedin.png": "/profile-page/static/media/linkedin.f249b38224ca41a0b909.png",
@@ -28,11 +29,11 @@
     "static/media/gradbrown.svg": "/profile-page/static/media/gradbrown.7be13f0df1f5a1672504b69db65434f4.svg",
     "static/media/gradwhite.svg": "/profile-page/static/media/gradwhite.a92525c2f6ba79c56be15e11b8ea7eb0.svg",
     "main.23b720d8.css.map": "/profile-page/static/css/main.23b720d8.css.map",
-    "main.f28be77e.js.map": "/profile-page/static/js/main.f28be77e.js.map",
+    "main.246819f2.js.map": "/profile-page/static/js/main.246819f2.js.map",
     "453.1aae3151.chunk.js.map": "/profile-page/static/js/453.1aae3151.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23b720d8.css",
-    "static/js/main.f28be77e.js"
+    "static/js/main.246819f2.js"
   ]
 }
