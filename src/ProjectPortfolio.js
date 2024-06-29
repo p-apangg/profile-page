@@ -7,18 +7,18 @@ import wb2 from './Projects/WhiteboardScanner2.png';
 import wb3 from './Projects/WhiteboardScanner3.png';
 import wb4 from './Projects/WhiteboardScanner4.png';
 const ProjectPortfolio = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
   const [filter, setFilter] = useState('Show all');
   const imageContainerRef = useRef(null);
 
   const handleChange = (event) => {
     setFilter(event.target.value);
-    if(event.target.value === 'Personal Work') setCurrentImageIndex(0);
-    if(event.target.value === 'Group Work') setCurrentImageIndex(1);
+    if(event.target.value === 'Personal Work') setCurrentProjectIndex(0);
+    if(event.target.value === 'Group Work') setCurrentProjectIndex(1);
   };
 
   const handleClick = (index) => {
-    setCurrentImageIndex(index);
+    setCurrentProjectIndex(index);
   
     if (imageContainerRef.current) {
       const selectedButton = imageContainerRef.current.children[index];
@@ -42,13 +42,14 @@ const ProjectPortfolio = () => {
   // };
   const projectpersonal = [
     { name: 'My Profile', id: 0 },
-    { name: 'Arduino game: RunRun', id: 3 },
-    { name: 'Pascal Compiler', id: 4 }
+    { name: 'Robot: Scanbot Explorer', id: 2 },
+    { name: 'Arduino game: RunRun', id: 4 },
+    { name: 'Pascal Compiler', id: 5 }
   ];
 
   const projectgroup = [
     { name: 'Smart Splitter', id: 1 },
-    { name: 'Whiteboard Scanner', id: 2 }
+    { name: 'Whiteboard Scanner', id: 3 }
   ];
 
   const getFilteredProjects = () => {
@@ -65,10 +66,10 @@ const ProjectPortfolio = () => {
 
   useEffect(() => {
     if (filter === 'Personal Work') {
-      setCurrentImageIndex(0);
+      setCurrentProjectIndex(0);
     }
     if (filter === 'Group Work') {
-      setCurrentImageIndex(1);
+      setCurrentProjectIndex(1);
     }
   }, [filter]);
   const projectlist = getFilteredProjects();
@@ -92,7 +93,7 @@ const ProjectPortfolio = () => {
               key={project.id}
               className="choice"
               onClick={() => handleClick(project.id)}
-              style={{ backgroundColor: currentImageIndex === project.id ? '#d98e97' : '#8f6963', color: 'white' }}
+              style={{ backgroundColor: currentProjectIndex === project.id ? '#d98e97' : '#8f6963', color: 'white' }}
             >
               {project.name}
             </button>
@@ -101,7 +102,7 @@ const ProjectPortfolio = () => {
         {/* <button className="next" onClick={() => scroll(1)}>&#10095;</button> */}
       </div>
       
-      {currentImageIndex ===0 && (
+      {currentProjectIndex === projectpersonal.find(project => project.name === 'My Profile').id && (
         <div className="project">
           <div className="info-containerp">
             <div className="info-row">
@@ -124,7 +125,7 @@ const ProjectPortfolio = () => {
           <img src={myHomepage} alt="My Homepage" />
         </div>
       )}
-            {currentImageIndex ===1 && (
+            {currentProjectIndex === projectgroup.find(project => project.name === 'Smart Splitter').id && (
         <div className="project">
           <div className="info-containerp">
             <div className="info-row">
@@ -160,7 +161,7 @@ const ProjectPortfolio = () => {
           ></iframe>
         </div>
       )}
-      {currentImageIndex ===2 && (
+      {currentProjectIndex ===projectgroup.find(project => project.name === 'Whiteboard Scanner').id && (
         <div className="project">
           <div className="info-containerp">
             <div className="info-row">
@@ -189,7 +190,7 @@ const ProjectPortfolio = () => {
           </div> */}
         </div>
       )}
-      {currentImageIndex ===3 && (
+      {currentProjectIndex ===  projectpersonal.find(project => project.name === 'Arduino game: RunRun').id && (
         <div className="project">
           <div className="info-containerp">
             <div className="info-row">
@@ -217,7 +218,7 @@ const ProjectPortfolio = () => {
           ></iframe>
         </div>
       )}
-      {currentImageIndex === 4 && (
+      {currentProjectIndex === projectpersonal.find(project => project.name === 'Pascal Compiler').id && (
         <div className="project">
           <div className="info-containerp">
             <div className="info-row">
@@ -230,7 +231,7 @@ const ProjectPortfolio = () => {
             </div>
             <div className="info-rowp">
               <span className="info-labelp">Language:</span>
-              <span>React JS, CSS</span>
+              <span>Java</span>
             </div>
             <div className="info-rowp">
               <span className="info-labelp">Sourcecode:</span>
@@ -239,7 +240,32 @@ const ProjectPortfolio = () => {
           </div>
         </div>
       )}
+            {currentProjectIndex ===  projectpersonal.find(project => project.name === 'Robot: Scanbot Explorer').id && (
+        <div className="project">
+          <div className="info-containerp">
+            <div className="info-row">
+              <span className="info-labelp">Year:</span>
+              <span>2024</span>
+            </div>
+            <div className="info-rowp">
+              <span className="info-labelp">Description:</span>
+              <span>ScanBot Explorer is a project I created as a Teaching Assistant in the 「Practical Introduction to Intelligent Robot Systems」 class. This smart robot, converted from a Roomba, serves as an example for students' final projects, showcasing advanced capabilities like scanning its surroundings, identifying objects, and navigating to targets.</span>
+            </div>
+            <div className="info-rowp">
+              <span className="info-labelp">Language:</span>
+              <span>Python</span>
+            </div>
+          </div>
+          <iframe
+            src="https://www.youtube.com/embed/7TQ09V9ZAvA"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      )}
     </div>
+    
   );
 };
 
