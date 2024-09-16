@@ -30,6 +30,16 @@ function NavBar() {
           {/* <Link to="volunteer" smooth={true} duration={500}>Volunteer Engagements</Link> */}
         </div>
       </div>
+      <div className="dropdown">
+        <button className="dropbtn">Others
+          <i className="fa fa-caret-down"></i>
+        </button>
+        <div className="dropdown-content">
+        <a href="https://p-apangg.github.io/badUI-app/" target="_blank" rel="noopener noreferrer">
+  Bad UI
+</a>
+        </div>
+      </div>
     </div>
   );
 }
