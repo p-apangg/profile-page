@@ -81,12 +81,14 @@
 
 #project-filter {
   padding: 5px;
+  width: 170px;
   font-size: small;
   border-radius: 25px;
   font-weight: bold;
   border-color: #654e3e;
   border-width: 2px;
   color:#654e3e;
+  margin-left: 5px;
 }
 
 .project-list {

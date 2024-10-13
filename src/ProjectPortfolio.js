@@ -6,15 +6,19 @@ import wb1 from './Projects/WhiteboardScanner1.png';
 import wb2 from './Projects/WhiteboardScanner2.png';
 import wb3 from './Projects/WhiteboardScanner3.png';
 import wb4 from './Projects/WhiteboardScanner4.png';
+import chatbot from './Projects/Chatbot_pipeline.png';
 const ProjectPortfolio = () => {
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
-  const [filter, setFilter] = useState('Show all');
+  const [filterMember, setFilterMember] = useState('All');
+  const [filterField, setFilterField] = useState('All');
   const imageContainerRef = useRef(null);
 
-  const handleChange = (event) => {
-    setFilter(event.target.value);
-    if(event.target.value === 'Personal Work') setCurrentProjectIndex(0);
-    if(event.target.value === 'Group Work') setCurrentProjectIndex(1);
+  const handleChangeMember = (event) => {
+    setFilterMember(event.target.value);
+  };
+
+  const handleChangeField = (event) => {
+    setFilterField(event.target.value);
   };
 
   const handleClick = (index) => {
@@ -54,38 +58,28 @@ const ProjectPortfolio = () => {
     );
   };
 
-  const projectpersonal = [
-    { name: 'My Profile', id: 0 },
-    { name: 'Robot: Scanbot Explorer', id: 2 },
-    { name: 'Arduino game: RunRun', id: 4 },
-    { name: 'Pascal Compiler', id: 5 }
-  ];
-
-  const projectgroup = [
-    { name: 'Smart Splitter', id: 1 },
-    { name: 'Whiteboard Scanner', id: 3 }
+  const myprojects = [
+    { name: 'My Profile', id: 0, member:'Personal',field: ['App'] },
+    { name: 'Smart Splitter', id: 1, member:'Group',field:['App','ML'] },
+    { name: 'Robot: Scanbot Explorer', id: 2, member:'Personal',field:['ML'] },
+    { name: 'Whiteboard Scanner', id: 3, member:'Group',field:['ML'] },
+    { name: 'Intern: Bank Chatbot', id: 4, member:'Personal',field:['App','ML'] },
+    { name: 'Arduino game: RunRun', id: 5, member:'Personal',field:['App'] },
   ];
 
   const getFilteredProjects = () => {
-    let projects = [];
-    if (filter === 'Show all') {
-      projects = [...projectpersonal, ...projectgroup];
-    } else if (filter === 'Personal Work') {
-      projects = projectpersonal;
-    } else if (filter === 'Group Work') {
-      projects = projectgroup;
-    }
-    return projects.sort((a, b) => a.id - b.id);
+    let projects = myprojects;
+    projects = projects.filter(project => project.member === filterMember || filterMember === 'All');
+    projects = projects.filter(project => project.field.includes(filterField)|| filterField === 'All');
+    projects = projects.sort((a, b) => a.id - b.id);
+    return projects;
   };
-
   useEffect(() => {
-    if (filter === 'Personal Work') {
-      setCurrentProjectIndex(0);
-    }
-    if (filter === 'Group Work') {
-      setCurrentProjectIndex(1);
-    }
-  }, [filter]);
+    console.log('projectlist:', projectlist,'answer:',projectlist[0]?.id);
+    setCurrentProjectIndex(projectlist[0]? projectlist[0].id : -1);
+    console.log('filterMember:', filterMember, 'filterField:', filterField,currentProjectIndex);
+    console.log('projectlist:', projectlist);
+  }, [filterMember, filterField]);
   const projectlist = getFilteredProjects();
   return (
     <div className='Overall'>
@@ -93,14 +87,18 @@ const ProjectPortfolio = () => {
         Project Portfolio
       </div>
       <div className="dropdown-container">
-        <select id="project-filter" value={filter} onChange={handleChange}>
-          <option value="Show all">Show all</option>
-          <option value="Personal Work">Personal Work ONLY</option>
-          <option value="Group Work">Group Work ONLY</option>
+        <select id="project-filter" value={filterMember} onChange={handleChangeMember}>
+          <option value="All">Group/Personal Work</option>
+          <option value="Personal">Personal Work</option>
+          <option value="Group">Group Work</option>
+        </select>
+        <select id="project-filter" style={{width:'100px'}} value={filterField} onChange={handleChangeField}>
+          <option value="All">All Field</option>
+          <option value="ML">ML & Data</option>
+          <option value="App">App Dev</option>
         </select>
       </div>
       <div className="wrapper">
-        {/* <button className="prev" onClick={() => scroll(-1)}>&#10094;</button> */}
         <div className="choice-container" ref={imageContainerRef} style={{ display: 'flex', overflowX: 'scroll' }}>
           {projectlist.map((project) => (
             <button
@@ -113,10 +111,21 @@ const ProjectPortfolio = () => {
             </button>
           ))}
         </div>
-        {/* <button className="next" onClick={() => scroll(1)}>&#10095;</button> */}
       </div>
-      
-      {currentProjectIndex === projectpersonal.find(project => project.name === 'My Profile').id && (
+      {currentProjectIndex ===-1 && (
+        <div className="project">
+          <div style={{
+            height: '100px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            fontWeight: 'bold',
+          }}>
+            data not found :  please select another filter
+          </div>
+        </div>
+      )}
+      {currentProjectIndex === myprojects.find(project => project.name === 'My Profile').id && (
         <div className="project">
           <div className="info-containerp">
             <div className="info-row">
@@ -139,7 +148,7 @@ const ProjectPortfolio = () => {
           <img src={myHomepage} alt="My Homepage" />
         </div>
       )}
-            {currentProjectIndex === projectgroup.find(project => project.name === 'Smart Splitter').id && (
+            {currentProjectIndex === myprojects.find(project => project.name === 'Smart Splitter').id && (
         <div className="project">
           <div className="info-containerp">
             <div className="info-row">
@@ -152,7 +161,7 @@ const ProjectPortfolio = () => {
             </div>
             <div className="info-rowp">
               <span className="info-labelp">Language:</span>
-              <span>React Native</span>
+              <span>React Native, Python</span>
             </div>
             <div className="info-rowp">
               <span className="info-labelp">Contributors:</span>
@@ -175,7 +184,27 @@ const ProjectPortfolio = () => {
           ></iframe>
         </div>
       )}
-      {currentProjectIndex ===projectgroup.find(project => project.name === 'Whiteboard Scanner').id && (
+      {currentProjectIndex ===myprojects.find(project => project.name === 'Intern: Bank Chatbot').id && (
+        <div className="project">
+          <div className="info-containerp">
+            <div className="info-row">
+              <span className="info-labelp">Year:</span>
+              <span>2023/8-9</span>
+            </div>
+            <div className="info-rowp">
+              <span className="info-labelp">Description:</span>
+              <span>
+              During my internship, I developed a Question-Answering (QA) system that utilizes a document database of 2374 trust funds. This system receives queries from users and selects the Top-N documents from the database. It then employs a BERT model, fine-tuned with corporate data, to highlight the most relevant answers within the selected documents.</span>
+            </div>
+            <div className="info-rowp">
+              <span className="info-labelp">Language:</span>
+              <span>Python</span>
+            </div>
+          </div>
+          <img src={chatbot} alt={`Chatbot Pipeline`} />
+        </div>
+      )}
+      {currentProjectIndex ===myprojects.find(project => project.name === 'Whiteboard Scanner').id && (
         <div className="project">
           <div className="info-containerp">
             <div className="info-row">
@@ -198,7 +227,7 @@ const ProjectPortfolio = () => {
           <ImageCarousel />
         </div>
       )}
-      {currentProjectIndex ===  projectpersonal.find(project => project.name === 'Arduino game: RunRun').id && (
+      {currentProjectIndex ===  myprojects.find(project => project.name === 'Arduino game: RunRun').id && (
         <div className="project">
           <div className="info-containerp">
             <div className="info-row">
@@ -226,29 +255,7 @@ const ProjectPortfolio = () => {
           ></iframe>
         </div>
       )}
-      {currentProjectIndex === projectpersonal.find(project => project.name === 'Pascal Compiler').id && (
-        <div className="project">
-          <div className="info-containerp">
-            <div className="info-row">
-              <span className="info-labelp">Year:</span>
-              <span>2022</span>
-            </div>
-            <div className="info-rowp">
-              <span className="info-labelp">Description:</span>
-              <span> This project is part of a 3rd-year bachelor project where we developed a Pascal compiler. The compiler translates programs written in the Pascal programming language into a low-level language (CASL-II). This project helped enhance our understanding of compiler design and low-level programming concepts.</span>
-            </div>
-            <div className="info-rowp">
-              <span className="info-labelp">Language:</span>
-              <span>Java</span>
-            </div>
-            <div className="info-rowp">
-              <span className="info-labelp">Sourcecode:</span>
-              <span><a href="https://github.com/p-apangg/Pascal-Compiler" className="link-as-text">Pascal Compiler</a></span>
-            </div>
-          </div>
-        </div>
-      )}
-            {currentProjectIndex ===  projectpersonal.find(project => project.name === 'Robot: Scanbot Explorer').id && (
+            {currentProjectIndex ===  myprojects.find(project => project.name === 'Robot: Scanbot Explorer').id && (
         <div className="project">
           <div className="info-containerp">
             <div className="info-row">
