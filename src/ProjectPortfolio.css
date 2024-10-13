@@ -124,11 +124,11 @@
 
 .project img{
   width: 80%;
+  max-width: 500px;
   margin: 0 auto;
   align-items: center;
   align-content: center;
-  border: #654e3e 4px solid;
-  border-radius: 10px;
+  border: #654e3e 1px solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -163,9 +163,9 @@
 }
 
 .imageButton.left {
-  left: 10%;
+  left: 15%;
 }
 
 .imageButton.right {
-  right: 10%;
+  right: 15%;
 }
