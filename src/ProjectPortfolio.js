@@ -59,12 +59,13 @@ const ProjectPortfolio = () => {
   };
 
   const myprojects = [
-    { name: 'My Profile', id: 0, member:'Personal',field: ['App'] },
-    { name: 'Smart Splitter', id: 1, member:'Group',field:['App','ML'] },
-    { name: 'Robot: Scanbot Explorer', id: 2, member:'Personal',field:['ML'] },
-    { name: 'Whiteboard Scanner', id: 3, member:'Group',field:['ML'] },
-    { name: 'Intern: Bank Chatbot', id: 4, member:'Personal',field:['App','ML'] },
-    { name: 'Arduino game: RunRun', id: 5, member:'Personal',field:['App'] },
+    { name: 'Portfolio Chatbot', id: 0, member:'Personal',field:['App','ML'] },
+    { name: 'My Profile', id: 1, member:'Personal',field: ['App'] },
+    { name: 'Smart Splitter', id: 2, member:'Group',field:['App','ML'] },
+    { name: 'Robot: Scanbot Explorer', id: 3, member:'Personal',field:['ML'] },
+    { name: 'Whiteboard Scanner', id: 4, member:'Group',field:['ML'] },
+    { name: 'Intern: Bank Chatbot', id: 5, member:'Personal',field:['App','ML'] },
+    { name: 'Arduino game: RunRun', id: 6, member:'Personal',field:['App'] },
   ];
 
   const getFilteredProjects = () => {
@@ -147,8 +148,8 @@ const ProjectPortfolio = () => {
           </div>
           <img src={myHomepage} alt="My Homepage" />
         </div>
-      )}
-            {currentProjectIndex === myprojects.find(project => project.name === 'Smart Splitter').id && (
+      )}    
+        {currentProjectIndex === myprojects.find(project => project.name === 'Smart Splitter').id && (
         <div className="project">
           <div className="info-containerp">
             <div className="info-row">
@@ -178,6 +179,30 @@ const ProjectPortfolio = () => {
           </div>
           <iframe
             src="https://www.youtube.com/embed/KRgqbgKeehI"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      )}
+      {currentProjectIndex === myprojects.find(project => project.name === 'Portfolio Chatbot').id && (
+        <div className="project">
+          <div className="info-containerp">
+            <div className="info-row">
+              <span className="info-labelp">Year:</span>
+              <span>2024</span>
+            </div>
+            <div className="info-rowp">
+              <span className="info-labelp">Description:</span>
+              <span>This project utilizes the GPT API to answer questions from a portfolio. Initially, it scrapes data from the website, organizing it by section. It then employs a transformer encoder to process the data and match it with the user's question. The section most related to the question is sent to the GPT along with the query, and the GPT provides the response. The model is designed to prompt for clarification or indicate an error if the questions are too general or beyond the scope of the data currently available.</span>
+            </div>
+            <div className="info-rowp">
+              <span className="info-labelp">Language:</span>
+              <span>Python, Flask, Javascript</span>
+            </div>
+          </div>
+          <iframe
+            src="https://www.youtube.com/embed/cP2dsPKUIAU"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
